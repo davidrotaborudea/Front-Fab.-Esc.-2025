@@ -1,6 +1,6 @@
 import { Product } from "@/models/product";
 
-export let mockProducts: Product[] = [
+export const mockProducts: Product[] = [
   { id: 1, name: 'Croquetas para perro extra grande', price: 45.99, stock: 120, provider: 'Purina', threshold: 10 },
   { id: 2, name: 'Arenero para gato', price: 30.00, stock: 15, provider: 'PetClean', threshold: 10 },
   { id: 3, name: 'Juguete de hule', price: 12.50, stock: 75, provider: 'DogPlay', threshold: 10 },
@@ -14,7 +14,6 @@ export let mockProducts: Product[] = [
 ];
 
 
-export function addProduct(product: Product ){
-
-   mockProducts = [...mockProducts, product];
+export function addProduct(product: Product) {
+  mockProducts.push(product)
 }

@@ -10,7 +10,7 @@ jest.mock('next/router', () => ({
 jest.mock('next/image', () => ({
   __esModule: true,
   default: (props: any) => {
-    return <img alt={props.alt || ''} {...props} />
+    return <img alt={props.alt ?? ''} {...props} />
   }
 }))
 

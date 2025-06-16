@@ -3,29 +3,46 @@
 
 :root {
   /* Base */
-  --background: #DCEBF2;     /* Fondo general (Celeste pastel) */
-  --foreground: #4A4A4A;     /* Texto principal (Gris neutro) */
+  --background: #DCEBF2;
+  /* Fondo general (Celeste pastel) */
+  --foreground: #4A4A4A;
+  /* Texto principal (Gris neutro) */
 
   /* Marca */
-  --primary: #30C88F;       /* Verde menta para botones o énfasis */
-  --secondary: #2D314D;     /* Azul oscuro para encabezados */
-  --accent: #2AB6D9;        /* Celeste vibrante para detalles */
+  --primary: #30C88F;
+  /* Verde menta para botones o énfasis */
+  --secondary: #2D314D;
+  /* Azul oscuro para encabezados */
+  --accent: #2AB6D9;
+  /* Celeste vibrante para detalles */
 
   /* Neutros */
-  --muted: #6B7280;         /* Texto secundario */
-  --border: #E5E7EB;        /* Bordes sutiles */
-  --surface: #F9FAFB;       /* Tarjetas, fondos suaves */
+  --muted: #6B7280;
+  /* Texto secundario */
+  --border: #E5E7EB;
+  /* Bordes sutiles */
+  --surface: #F9FAFB;
+  /* Tarjetas, fondos suaves */
 
-   /* 📏 Tamaños de fuente */
-  --text-xs: 0.75rem;     /* 12px */
-  --text-sm: 0.875rem;    /* 14px */
-  --text-base: 1rem;      /* 16px */
-  --text-md: 1.125rem;    /* 18px */
-  --text-lg: 1.25rem;     /* 20px */
-  --text-xl: 1.5rem;      /* 24px */
-  --text-2xl: 1.875rem;   /* 30px */
-  --text-3xl: 2.25rem;    /* 36px */
-  --text-4xl: 3rem;       /* 48px */
+  /* 📏 Tamaños de fuente */
+  --text-xs: 0.75rem;
+  /* 12px */
+  --text-sm: 0.875rem;
+  /* 14px */
+  --text-base: 1rem;
+  /* 16px */
+  --text-md: 1.125rem;
+  /* 18px */
+  --text-lg: 1.25rem;
+  /* 20px */
+  --text-xl: 1.5rem;
+  /* 24px */
+  --text-2xl: 1.875rem;
+  /* 30px */
+  --text-3xl: 2.25rem;
+  /* 36px */
+  --text-4xl: 3rem;
+  /* 48px */
 
   /* 🔡 Pesos */
   --font-thin: 100;
@@ -46,10 +63,6 @@
   --font-sans: 'Geist Sans', sans-serif;
   --font-mono: 'Geist Mono', monospace;
 
-
-}
-
-:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -68,7 +81,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-} 
+}
 
 table {
   width: 100%;
@@ -78,7 +91,8 @@ table {
   font-family: var(--font-sans, Arial, Helvetica, sans-serif);
 }
 
- th,td {
+th,
+td {
   border: 1px solid black;
   padding: 0.75rem 1rem;
   text-align: left;
@@ -89,11 +103,11 @@ thead {
   color: var(--color-background);
 }
 
- tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
   background-color: var(--color-background);
 }
 
- tbody tr:hover {
+tbody tr:hover {
   background-color: var(--color-accent);
   color: var(--color-background);
   cursor: pointer;
@@ -105,7 +119,8 @@ thead {
   padding: 0.5rem 1.25rem;
   font-weight: 600;
   border: none;
-  border-radius: 0.375rem; /* 6px */
+  border-radius: 0.375rem;
+  /* 6px */
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: var(--font-sans, Arial, Helvetica, sans-serif);
@@ -115,7 +130,7 @@ thead {
   background-color: var(--color-accent);
 }
 
-input{
+input {
   border: 1px solid black;
 }
 
@@ -124,7 +139,7 @@ form {
   background-color: var(--color-surface);
   padding: 2rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   color: var(--color-foreground);
   font-family: var(--font-sans, Arial, sans-serif);
 }
@@ -149,7 +164,8 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(48, 200, 143, 0.3); /* sombra del color primario */
+  box-shadow: 0 0 0 2px rgba(48, 200, 143, 0.3);
+  /* sombra del color primario */
 }
 
 /* Etiquetas */
@@ -166,11 +182,15 @@ input:invalid {
 }
 
 input:disabled {
-  background-color: #f3f4f6;     /* Un gris claro más cálido que el clásico */
-  color: var(--muted);           /* Texto gris medio */
-  border-color: var(--border);   /* Borde tenue */
+  background-color: #f3f4f6;
+  /* Un gris claro más cálido que el clásico */
+  color: var(--muted);
+  /* Texto gris medio */
+  border-color: var(--border);
+  /* Borde tenue */
   cursor: not-allowed;
-  opacity: 1;                    /* No lo hagas transparente */
+  opacity: 1;
+  /* No lo hagas transparente */
 }
 
 .form-error {
@@ -181,17 +201,21 @@ input:disabled {
 }
 
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: var(--color-secondary);
   font-weight: 700;
 }
 
-h1{
+h1 {
   font-size: var(--text-4xl);
 }
 
-h2{
-   font-size: var(--text-3xl);
+h2 {
+  font-size: var(--text-3xl);
 }
 
 p {

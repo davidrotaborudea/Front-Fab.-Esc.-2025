@@ -4,12 +4,10 @@ import { useRouter } from 'next/router'
 import * as mockData from '@/data/mockProducts'
 import '@testing-library/jest-dom'
 
-// Mock next/router
 jest.mock('next/router', () => ({
   useRouter: jest.fn()
 }))
 
-// Mock alert
 global.alert = jest.fn()
 
 describe('Product form', () => {
